@@ -1,0 +1,173 @@
+body {
+    color: white;
+}
+.background{
+    width:100%;
+    height:100%;
+}
+.background::before {
+  content:"";
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-image: url("/safestop/front/static/img/feed.jpg");
+  background-size:cover;
+  z-index:-1;
+  filter: brightness(60%) blur(2px);
+}
+.data{
+    text-align: center;
+}
+.title{
+    font-size: 120px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    color: rgba(255,255,255,1);
+    text-shadow: -2px -2px 3px mediumseagreen, 2px -2px 3px mediumseagreen, -2px 2px 3px mediumseagreen, 2px 2px 3px mediumseagreen;
+    background: rgba(0,0,0,1%);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border:solid grey;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+}
+table{
+    margin-top: 20px;
+    border:1px solid seagreen;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background: white; */
+}
+tr{
+    cursor: auto;
+}
+th, td {
+    border:1px solid white;
+    border-collapse: collapse;
+    background-color: rgba(158, 255, 158, 0.25);
+    font-size: 30px;
+    width: auto;
+    max-width: 100%;
+    padding: 10px;
+}
+.error{
+    font-size: 80px;
+}
+.central_text{
+    font-size: 80px;
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.backbutton{
+    font-size: 40px;
+    position: fixed;
+    left: 95%;
+    bottom: 95%;
+    background: seagreen;
+    color:#ffffff;
+    border:outset rgba(158, 255, 158, 0.44);
+    border-collapse: collapse;
+    text-align: center;
+    margin: -12px -6px;
+    display: inline-block;
+    text-decoration: none;
+}
+.livebutton{
+    font-size: 40px;
+    position: fixed;
+    right: 95%;
+    bottom: 95%;
+    background: seagreen;
+    color:#ffffff;
+    border:outset rgba(158, 255, 158, 0.44);
+    border-collapse: collapse;
+    text-align: center;
+    margin: -12px 6px;
+    display: inline-block;
+    text-decoration: none;
+    visibility: hidden;
+}
+.spinner {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid seagreen; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+a.livebutton:hover{
+    background-color: rgb(200,200,0);
+    cursor: pointer;
+}
+a.livebutton:active{
+    background-color: rgb(150,0,0);
+}
+td.clickable:hover{
+    cursor: pointer;
+    color: rgb(255,255,0);
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+}
+td.clickable:active{
+    cursor: pointer;
+    color: rgb(255,0,0);
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+}
+a.backbutton:hover{
+    background-color: rgb(200,200,0);
+    cursor: pointer;
+}
+a.backbutton:active{
+    background-color: rgb(150,0,0);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: lawngreen;
+    background: seagreen;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200,200,0);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(150,0,0);
+}
+::selection {
+  color: rgba(200,200,0,1);
+  background: seagreen;
+}

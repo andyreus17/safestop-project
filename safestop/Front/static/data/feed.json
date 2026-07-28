@@ -1,0 +1,44 @@
+{
+    "1": {
+        "name": "20250521_115625.mp4",
+        "frames": {}
+    },
+    "2": {
+        "name": "iter1_20250527_133944.mp4",
+        "frames": {}
+    },
+    "3": {
+        "name": "iter1_20250527_134011.mp4",
+        "frames": {}
+    },
+    "4": {
+        "name": "video1.mp4",
+        "frames": {
+            "1": {
+                "date": "21/4/25",
+                "frame": "/front/static/img/video1foto1.png",
+                "plate_crop": "/front/static/img/video1frame1.png",
+                "time": "15:52",
+                "patent": "SJJV86"
+            },
+            "2": {
+                "date": "21/4/25",
+                "frame": "/front/static/img/video1foto2.png",
+                "plate_crop": "/front/static/img/video1frame2.png",
+                "time": "16:11",
+                "patent": "KDDG45"
+            },
+            "3": {
+                "date": "21/4/25",
+                "frame": "/front/static/img/video1foto3.png",
+                "plate_crop": "/front/static/img/video1frame3.png",
+                "time": "16:30",
+                "patent": "JFTJ49"
+            }
+        }
+    },
+    "5": {
+        "name": "videotrampa.mp4",
+        "frames": {}
+    }
+}

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding-top: 30px;
+    height: 100%;
+}
+.background{
+    width:100%;
+    height:100%;
+}
+.background::before {
+  content:"";
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-image: url("/safestop/front/static/img/calle.png");
+  background-size:cover;
+  z-index:-1;
+  filter: brightness(60%) blur(2px);
+}
+.title{
+    text-align: center;
+    font-size: 120px;
+}
+.safe{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: -2px -2px 0 mediumseagreen, 1px -1px 0 mediumseagreen, -1px 1px 0 mediumseagreen, 1px 1px 0 mediumseagreen;
+}
+.stop{
+    color:red;
+}
+.button {
+    font-family: "Monotype Corsiva";
+    color:#ffffff;
+    text-align: center;
+    margin: 8px 4px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 40px;
+}
+.buttonDiv {
+    background-color: seagreen;
+    color:#ffffff;
+    border:outset rgba(158, 255, 158, 0.44);
+    border-collapse: collapse;
+    text-align: center;
+    margin: 8px 4px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 60px;
+    width: 600px;
+}
+.button-group{
+    text-align: center;
+}
+div.buttonDiv:hover{
+    background-color: rgb(200,200,0);
+    cursor: pointer;
+}
+div.buttonDiv:active{
+    background-color: rgb(150,0,0);
+}
+.button-box{
+    display: block;
+    padding-top: 40px;
+    background-color: black;
+    border:solid grey;
+    border-radius: 50px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.pilar{
+    background-color: black;
+    width: 60px;
+    overflow-block: clip;
+    block-size: 100000000px;
+    left: 48.5%;
+    overflow: hidden;
+    position: fixed;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px grey;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: lawngreen;
+    background: seagreen;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200,200,0);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(150,0,0);
+}
+::selection {
+  color: rgba(200,200,0,1);
+  background: seagreen;
+}

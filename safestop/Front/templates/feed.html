@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        {% block css %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/feed.css') }}" />
+        {% endblock %}
+        <title>Cámara {{id}}</title>
+    </head>
+    <body>
+        <div class="background">
+        <a class="backbutton" href="{{ url_for('index') }}">back</a>
+        <a class="livebutton" id="liveButton" onclick="live()">Live</a>
+            <div class="data">
+                <div class="title">Cámara {{ id }}</div>
+                <div id="video_div" class="video" style="display:none;">
+                    <video id="video" preload="auto" width="960" height="540" autoplay muted>
+                    </video>
+                </div>
+                <div id="loader" class="central_text"> 
+                    <p>Cargando datos del modelo...</p>
+                    <p><div class="spinner"></div></p>
+                </div>
+                <table id="resultTable" style= "display:none;" >
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Foto</th>
+                            <th>Marco</th>
+                            <th>Patente</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultBody"></tbody>
+                </table>
+            </div>
+        </div>
+        <script>window.feed_id="{{ id }}"</script>
+        <script>window.start="{{ start }}"</script>
+        <script src="{{ url_for('static', filename='js/feed.js') }}"></script>
+    </body>
+</html>
