@@ -34,7 +34,7 @@ El frontend se comunica con el backend IA mediante un token secreto (secret_code
 - Flask
 - JavaScript
 - HTML/CSS
-- Ultralytics YOLOv8
+- Ultralytics YOLO11
 - EasyOCR
 
 ## Notas
